@@ -106,7 +106,7 @@ svg{
 }
 
 
-/* Remove all animations, transitiions and smoth */
+/* Remove all animations, transitions and smooth */
 @media (prefers-reduced-motion: reduce){
     html:focus-within{
         scroll-behavior: auto;
@@ -266,6 +266,33 @@ p[data-width='wide']{
 }
 
 
+/* CTA */
+
+.cta{
+    position: relative;
+    isolation: isolate;
+    text-align: center;
+}
+
+@media(min-width: 50em){
+    .cta{
+        text-align: left;
+    }
+}
+
+.cta::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: url('../images/bg-tablet-pattern.svg'), 
+    url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: -15rem -5rem, 65rem -42rem;
+    opacity: 0.1;
+}
+
+
 /* utility classes */
 
 .visually-hidden {
@@ -289,10 +316,6 @@ p[data-width='wide']{
     margin-inline: auto;
 }
 
-:where(.flow :not(:first-child)){
-    margin-top: var(--flow-spacer, 3em);
-}
-
 .even-columns{
     display: grid;
     gap: 1rem;
@@ -304,6 +327,26 @@ p[data-width='wide']{
         grid-auto-columns: 1fr;
     }
 }
+
+.vertical-align-center{
+    align-items: center;
+}
+
+.justify-self-end{
+    margin-left: auto;
+}
+
+@media(min-width:50em){
+    .justify-self-end-md{
+        margin-left: auto;
+    }
+}
+
+:where(.flow :not(:first-child)){
+    margin-top: var(--flow-spacer, 3em);
+}
+
+
 
 .text-primary-400{
     color: var(--clr-primary-400);
