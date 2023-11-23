@@ -19,7 +19,6 @@ navToggle.addEventListener('click',() =>{
       responsive: {
         480: {
           dots: false, // dots enabled 1280px and up
-          
         }
       }
     });
