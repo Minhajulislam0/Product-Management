@@ -32,18 +32,6 @@
             aria-controls="primary-navigation"
             aria-expanded="false"
           >
-            <img
-              class="icon-hamburger"
-              src="./images/icon-hamburger.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <img
-              class="icon-close"
-              src="./images/icon-close.svg"
-              alt=""
-              aria-hidden="true"
-            />
             <span class="visually-hidden">Menu</span>
           </button>
           <nav class="primary-navigation" id="primary-navigation">
@@ -87,11 +75,11 @@
         </div>
       </section>
 
-      <section class="padding-block-900">
+      <section class="sales-points | padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div
-              class="flow text-center-sm-only margin-bottom-700"
+              class="sales-points_blog | flow text-center-sm-only margin-bottom-700"
               style="--flow-spacer: 1.5rem"
             >
               <h2 class="fs-secondary-heading fw-bold">
@@ -149,7 +137,7 @@
         </div>
       </section>
 
-      <section class="carousel | padding-block-700 text-center">
+      <section class="carousel | padding-block-900 text-center">
         <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
         <!-- carousel here -->
         <ul class="slider">
@@ -201,7 +189,9 @@
         <button class="button">Get Started</button>
       </section>
 
-      <section class="cta | padding-block-900 bg-accent-400 text-netural-100">
+      <section
+        class="cta | margin-top-900 padding-block-900 bg-accent-400 text-netural-100"
+      >
         <div class="container">
           <div class="even-columns vertical-align-center">
             <div>
@@ -222,60 +212,59 @@
     >
       <div class="container">
         <div class="primary-footer-wrapper">
-          <div class="primary-footer-logo-social">
-            <a href="#" aria-label="home">
-              <svg class="icon" width="146" height="24">
-                <use xlink:href="images/logo.svg#logo"></use>
-              </svg>
-            </a>
-            <ul class="social-list" role="list" aria-level="Social links">
-              <li>
-                <a aria-level="facebook" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="./images/social-icons.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a aria-level="youtube" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="./images/social-icons.svg#icon-youtube"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a aria-level="twitter" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="./images/social-icons.svg#icon-twitter"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a aria-level="pinterest" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="./images/social-icons.svg#icon-pinterest"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a aria-level="instagram" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="./images/social-icons.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <a class="primary-footer-logo" href="#" aria-label="home">
+            <svg class="logo | mx-auto" width="146" height="24">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="social-list" role="list" aria-level="Social links">
+            <li>
+              <a aria-level="facebook" href="#">
+                <svg class="social-icon">
+                  <use
+                    xlink:href="./images/social-icons.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-level="youtube" href="#">
+                <svg class="social-icon">
+                  <use
+                    xlink:href="./images/social-icons.svg#icon-youtube"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-level="twitter" href="#">
+                <svg class="social-icon">
+                  <use
+                    xlink:href="./images/social-icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-level="pinterest" href="#">
+                <svg class="social-icon">
+                  <use
+                    xlink:href="./images/social-icons.svg#icon-pinterest"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-level="instagram" href="#">
+                <svg class="social-icon">
+                  <use
+                    xlink:href="./images/social-icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
           <div class="primary-footer-nav">
             <nav class="footer-nav">
               <ul
@@ -294,13 +283,15 @@
               </ul>
             </nav>
           </div>
-          <div class="primary-footer-form">
-            <form action="">
-              <input type="email" />
-              <button class="button" data-shadow="none">Go</button>
-            </form>
-            <p>Copyright 2020. All Rights Reserved.</p>
-          </div>
+          <!-- <div class="primary-footer-form"> -->
+          <form class="primary-footer-form" action="">
+            <input type="email" />
+            <button class="button" data-shadow="none">Go</button>
+          </form>
+          <p class="primary-footer-copyright">
+            Copyright 2020. All Rights Reserved.
+          </p>
+          <!-- </div> -->
         </div>
       </div>
     </footer>
